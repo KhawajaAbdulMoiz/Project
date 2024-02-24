@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+
+
+</head>
+<body>
+    <div class="sign-up-form">
+        <h1>Sign Up</h1>
+
+        <form>
+            <input type="text" class="input-box" placeholder="First Name" id="First name" required>
+            <input type="text" class="input-box" placeholder="Last Name" id="Last name" required>
+            <input type="email" class="input-box" placeholder="Email">
+            
+            <select class="form-select" aria-label="Default select ">
+                <option selected>User-Type</option>
+                <option value="1">Admin</option>
+                <option value="2">Owner</option>
+                <option value="3">Tenant</option>
+                <option value="4">Employee</option>
+              </select>
+              
+              <input type="Contact" class="input-contact" placeholder="Contact" id="Contact" required>
+              <input type="password" class="input-pass"placeholder="Password" id="password" required>            
+              <input type="password" class="input-cpass"placeholder="Confirm Password" id="Confirm password" required>            
+              <p><span><input type="checkbox" name=""</span>I agree to the terms and conditions</p>
+              <button type="button" class="Signupbutton">Sign Up</button>
+              <hr>
+              <p>Already have an account? <a href="#">Login</a></p>
+        </form>
+    </div>
+</body>
+</html>
+
+
